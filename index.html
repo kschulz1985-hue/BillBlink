@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BillBlink</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BillBlink</h1>
+    <p>Your bills. Organized. On time. Stress‑free.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Track Bills Effortlessly</h2>
+      <p>BillBlink helps you stay ahead of due dates, avoid late fees, and manage your financial life with clarity.</p>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Add bills manually</li>
+        <li>Automatic reminders</li>
+        <li>Recurring bill detection</li>
+        <li>Simple dashboard</li>
+      </ul>
+    </section>
+
+    <!-- ⭐ NEW: Bill Input Section -->
+    <section class="bill-entry">
+      <h2>Add a Bill</h2>
+      <input id="billInput" placeholder="Enter bill text..." />
+      <button onclick="addBill()">Save Bill</button>
+    </section>
+
+    <!-- ⭐ NEW: Bill List Section -->
+    <section class="bill-list">
+      <h2>Saved Bills</h2>
+      <ul id="billList"></ul>
+    </section>
+
+    <section class="cta">
+      <button id="startBtn">Get Started</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
