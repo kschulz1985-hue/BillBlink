@@ -1,0 +1,11 @@
+name = "billblink"
+main = "src/worker.js"
+compatibility_date = "2024-09-01"
+
+[site]
+bucket = "./public"
+
+[kv_namespaces]
+bindings = [
+  { binding = "BILLS", id = "1f3ad67a3e1a444fb3266d1f3839cf74" }
+]
